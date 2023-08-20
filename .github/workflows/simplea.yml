@@ -23,7 +23,7 @@ jobs:
     
           if: ${{ failure() }} # only run when this job is failed.
       - name: Create Issue Action
-          with:
+        with:
             title: Linter Failed
             token: ${{secrets.GITHUB_TOKEN}}
             assignees: ${{github.actor}}
