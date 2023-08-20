@@ -6,7 +6,8 @@ jobs:
   run-shell-command:
     runs-on: ubuntu-latest
     steps:
-     - uses: actions/checkout@v3
+     - name: teste
+       uses: actions/checkout@v3
      - name: Something that might fail
        run: exit 1
      - name: Create Issue on Failed workflow
