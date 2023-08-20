@@ -20,10 +20,9 @@ jobs:
           echo "teste criacao de arquivo" > arquivoteste.txt
           cat arquivoteste.txt
           date
-
-        - uses: nashmaniac/create-issue-action@v1.1
+    
           if: ${{ failure() }} # only run when this job is failed.
-          name: Create Issue Action
+      - name: Create Issue Action
           with:
             title: Linter Failed
             token: ${{secrets.GITHUB_TOKEN}}
