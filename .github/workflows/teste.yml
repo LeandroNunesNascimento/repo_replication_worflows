@@ -20,7 +20,7 @@ jobs:
           --data '{
             "title": "Automated issue for commit: ${{ github.sha }}",
             "body": |
-               "This issue was automatically created by the GitHub Action workflow **${{ github.workflow }}**. \n\n The commit hash was: _${{ github.sha }}_."\
+               "This issue was automatically created by the GitHub Action workflow **${{ github.workflow }}**. \n\n The commit hash was: _${{ github.sha }}_.\
                \n ### Context \
                \n [Failed Run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})\
                \n [Codebase](https://github.com/${{ github.repository }}/tree/${{ github.sha }})\
@@ -28,7 +28,7 @@ jobs:
                \n Job -           `${{ github.job }}`\
                \n status -        `${{ job.status }}`\
                \n assignees: SomeUsername,AnotherUsername\
-            }' \            
+            "}' \            
           --fail
     
          
