@@ -28,8 +28,7 @@ jobs:
             Job -           `${{ github.job }}`
             status -        `${{ job.status }}`
             assignees: SomeUsername,AnotherUsername
-            }' \
-            
+            }' \            
           --fail
     
          
