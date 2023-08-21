@@ -11,7 +11,7 @@ jobs:
      - name: teste
        uses: actions/checkout@v3
      - name: Something that might fail
-       run: exit 0
+       run: exit 1
      - name: Create Issue on Failed workflow
        if: ${{ failure() }}
        run: |
